@@ -30,7 +30,7 @@ Default: `1`
 
 Sets the number of consecutive newlines that files checked at least should end with.
 
-**`maximum_newlines =` $maximum**>
+**`maximum_newlines => $maximum`**
 
 Default: `miminum_newlines`
 

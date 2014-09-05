@@ -191,7 +191,7 @@ Default: C<1>
 
 Sets the number of consecutive newlines that files checked at least should end with.
 
-B<C<maximum_newlines => $maximum>>
+B<C<maximum_newlines =E<gt> $maximum>>
 
 Default: C<miminum_newlines>
 
