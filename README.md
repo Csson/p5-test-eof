@@ -14,7 +14,7 @@ Test::EOFNewlines - Check correct end of files in your project.
 
 This module is used to check the end of files of Perl modules and scripts. It is a way to make sure that files and with (at least) one line break.
 
-It assumes that only "\\n" are used as line breaks. You might want to check if your files contains any faulty line breaks, use `Test::EOL` for that first.
+It assumes that only "\\n" are used as line breaks. You might want to check if your files contains any faulty line breaks, use [Test::EOL](https://metacpan.org/pod/Test::EOL) for that first.
 
 There is only one function:
 
@@ -32,7 +32,7 @@ Sets the number of consecutive newlines that files checked at least should end w
 
 **`maximum_newlines =` $maximum**>
 
-Default: `1`
+Default: `miminum_newlines`
 
 Sets the number of consecutive newlines that files checked at most should end with.
 
