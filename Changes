@@ -1,6 +1,7 @@
 Revision history for Test-EOFNewlines
 
 {{$NEXT}}
+    - Add dependencies
 
 0.01  2014-09-05 15:02:32 CEST
-        - Initial release
+     - Initial release
