@@ -24,7 +24,7 @@ There is only one function:
 
 Checks all Perl files (basically `*.pm` and `*.pl`) in `@directories` and sub-directories. If `@directories` is empty the default is the parent of the current directory.
 
-**`minimum_newlines =` $minimum**>
+**`minimum_newlines => $minimum`**
 
 Default: `1`
 

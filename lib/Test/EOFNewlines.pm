@@ -185,7 +185,7 @@ There is only one function:
 
 Checks all Perl files (basically C<*.pm> and C<*.pl>) in C<@directories> and sub-directories. If C<@directories> is empty the default is the parent of the current directory.
 
-B<C<minimum_newlines => $minimum>>
+B<C<minimum_newlines =E<gt> $minimum>>
 
 Default: C<1>
 
