@@ -35,7 +35,8 @@ sub all_perl_files_ok {
 
     _make_plan();
 
-    if(exists $options->{'minimum_newlines'} && $options->{'minimum_newlines'} == 0) {
+    # no need to check then...
+    if(exists $options->{'minimum_newlines'} && $options->{'minimum_newlines'} <= 0) {
         return 1;
     }
 
