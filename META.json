@@ -46,6 +46,17 @@
       }
    },
    "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/Csson/p5-test-eofnewlines/issues"
+      },
+      "homepage" : "https://github.com/Csson/p5-test-eofnewlines",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/Csson/p5-test-eofnewlines.git",
+         "web" : "https://github.com/Csson/p5-test-eofnewlines"
+      }
+   },
    "version" : "0.01"
 }
 
