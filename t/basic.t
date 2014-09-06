@@ -1,6 +1,6 @@
 use strict;
 use Test::More;
-use Test::EOFNewlines;
+use Test::EOF
 use Cwd;
 use File::Spec;
 
