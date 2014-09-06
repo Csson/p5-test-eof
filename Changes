@@ -1,6 +1,8 @@
 Revision history for Test-EOF
 
 {{$NEXT}}
+
+0.04  2014-09-06 08:21:56 CEST
 	- maximum_newlines can't be less than minimum_newlines
 	- Added strict option
 
