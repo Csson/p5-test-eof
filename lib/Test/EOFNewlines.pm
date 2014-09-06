@@ -174,6 +174,8 @@ Test::EOFNewlines - Check correct end of files in your project.
 
 =head1 DESCRIPTION
 
+Deprecated. Renamed L<Test::EOF>. This distribution will soon be removed.
+
 This module is used to check the end of files of Perl modules and scripts. It is a way to make sure that files and with (at least) one line break.
 
 It assumes that only "\n" are used as line breaks. You might want to check if your files contains any faulty line breaks, use L<Test::EOL> for that first.
