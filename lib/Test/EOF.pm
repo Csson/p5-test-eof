@@ -1,4 +1,4 @@
-package Test::EOFNewlines;
+package Test::EOF;
 
 use strict;
 use warnings;
@@ -162,13 +162,13 @@ __END__
 
 =head1 NAME
 
-Test::EOFNewlines - Check correct end of files in your project.
+Test::EOF - Check correct end of files in your project.
 
 =head1 SYNOPSIS
 
-  use Test::EOFNewlines;
+  use Test::EOF;
 
-  all_perl_files_ok('lib/Test::EOFNewlines', { minimum_newlines => 2 });
+  all_perl_files_ok('lib/Test::EOF', { minimum_newlines => 2 });
 
   done_testing();
 
