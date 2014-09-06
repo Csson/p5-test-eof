@@ -38,6 +38,8 @@ Default: `miminum_newlines`
 
 Sets the number of consecutive newlines that files checked at most should end with.
 
+If `maximum_newlines` is **less** than `minimum_newlines` it gets set to `minimum_newlines`.
+
 # ACKNOWLEDGEMENTS
 
 [Test::EOL](https://metacpan.org/pod/Test::EOL) was used as an inspiration.

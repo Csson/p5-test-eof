@@ -49,11 +49,18 @@ sub _check_perl_file {
     my $file = shift;
     my $options = shift;
 
-    if(exists $options->{'minimum_newlines'} && !exists $options->{'maximum_newlines'}) {
+    $options->{'minimum_newlines'} ||= 1;
+    if(!exists $options->{'maximum_newlines'}) {
+        $options->{'maximum_newlines'} = $options->{'minimum_newlines'} + 3;
+    }
+    elsif(exists $options->{'maximum_newlines'} && $options->{'maximum_newlines'} < $options->{'minimum_newlines'}) {
         $options->{'maximum_newlines'} = $options->{'minimum_newlines'};
     }
-    $options->{'minimum_newlines'} ||= 1;
-    $options->{'maximum_newlines'} ||= 1;
+
+    if($options->{'strict'}) {
+        $options->{'minimum_newlines'} = 1;
+        $options->{'maximum_newlines'} = 1;
+    }
 
     $file = _module_to_path($file);
 
@@ -69,11 +76,11 @@ sub _check_perl_file {
     }
 
     if($linecount < $options->{'minimum_newlines'}) {
-        $test->ok(0, "Enough empty lines (had $linecount, wanted $options->{'minimum_newlines'}) at the end of $file");
+        $test->ok(0, "Not enough empty lines (had $linecount, wanted $options->{'minimum_newlines'}) at the end of $file");
         return 0;
     }
     elsif($linecount > $options->{'maximum_newlines'}) {
-        $test->ok(0, "Not too many empty lines (had $linecount, wanted $options->{'maximum_newlines'}) at the end of $file ");
+        $test->ok(0, "Too many empty lines (had $linecount, wanted $options->{'maximum_newlines'}) at the end of $file ");
         return 0;
     }
     $test->ok(1, "Just the right number of empty lines at the end of $file");
@@ -186,6 +193,8 @@ There is only one function:
 
     all_perl_files_ok(@directories, { minimum_newlines => 1, maximum_newlines => 2 })
 
+    all_perl_files_ok(@directories, { strict => 1 })
+
 Checks all Perl files (basically C<*.pm> and C<*.pl>) in C<@directories> and sub-directories. If C<@directories> is empty the default is the parent of the current directory.
 
 B<C<minimum_newlines =E<gt> $minimum>>
@@ -199,6 +208,12 @@ B<C<maximum_newlines =E<gt> $maximum>>
 Default: C<miminum_newlines>
 
 Sets the number of consecutive newlines that files checked at most should end with.
+
+If C<maximum_newlines> is B<less> than C<minimum_newlines> it gets set to C<minimum_newlines>.
+
+B<C<strict>>
+
+If C<strict> is given a true value, both C<minimum_newlines> and C<maximum_newlines> will be set to C<1>. This option has precedence over the other two.
 
 =head1 ACKNOWLEDGEMENTS
 
@@ -230,3 +245,5 @@ This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 
 =cut
+
+
