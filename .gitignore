@@ -1,4 +1,5 @@
-/Test-EOFNewlines-*
+/Test-EOF*
+/test-eof*
 /.build
 /_build*
 /Build

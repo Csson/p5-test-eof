@@ -22,7 +22,9 @@ There is only one function:
 
 ## all\_perl\_files\_ok
 
-    all_perl_files_ok(@directories, { minimum_newlines => 1, maximum_newlines => 2 })
+    all_perl_files_ok(@directories, { minimum_newlines => 1, maximum_newlines => 2 });
+
+    all_perl_files_ok(@directories, { strict => 1 });
 
 Checks all Perl files (basically `*.pm` and `*.pl`) in `@directories` and sub-directories. If `@directories` is empty the default is the parent of the current directory.
 
@@ -37,6 +39,12 @@ Sets the number of consecutive newlines that files checked at least should end w
 Default: `miminum_newlines`
 
 Sets the number of consecutive newlines that files checked at most should end with.
+
+If `maximum_newlines` is **less** than `minimum_newlines` it gets set to `minimum_newlines`.
+
+**`strict`**
+
+If `strict` is given a true value, both `minimum_newlines` and `maximum_newlines` will be set to `1`. This option has precedence over the other two.
 
 # ACKNOWLEDGEMENTS
 
