@@ -3,7 +3,7 @@ package Test::EOF;
 use strict;
 use warnings;
 
-use 5.010010;
+use 5.010;
 our $VERSION = '0.04';
 
 use Cwd qw/cwd/;
