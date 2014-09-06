@@ -12,7 +12,7 @@
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
       "version" : "2"
    },
-   "name" : "Test-EOFNewlines",
+   "name" : "test-eof",
    "no_index" : {
       "directory" : [
          "t",
@@ -53,13 +53,13 @@
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/Csson/p5-test-eofnewlines/issues"
+         "web" : "https://github.com/Csson/p5-test-eof/issues"
       },
-      "homepage" : "https://github.com/Csson/p5-test-eofnewlines",
+      "homepage" : "https://github.com/Csson/p5-test-eof",
       "repository" : {
          "type" : "git",
-         "url" : "https://github.com/Csson/p5-test-eofnewlines.git",
-         "web" : "https://github.com/Csson/p5-test-eofnewlines"
+         "url" : "https://github.com/Csson/p5-test-eof.git",
+         "web" : "https://github.com/Csson/p5-test-eof"
       }
    },
    "version" : "0.03"
