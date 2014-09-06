@@ -22,9 +22,9 @@ There is only one function:
 
 ## all\_perl\_files\_ok
 
-    all_perl_files_ok(@directories, { minimum_newlines => 1, maximum_newlines => 2 })
+    all_perl_files_ok(@directories, { minimum_newlines => 1, maximum_newlines => 2 });
 
-    all_perl_files_ok(@directories, { strict => 1 })
+    all_perl_files_ok(@directories, { strict => 1 });
 
 Checks all Perl files (basically `*.pm` and `*.pl`) in `@directories` and sub-directories. If `@directories` is empty the default is the parent of the current directory.
 

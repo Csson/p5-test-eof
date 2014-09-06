@@ -191,9 +191,9 @@ There is only one function:
 
 =head2 all_perl_files_ok
 
-    all_perl_files_ok(@directories, { minimum_newlines => 1, maximum_newlines => 2 })
+    all_perl_files_ok(@directories, { minimum_newlines => 1, maximum_newlines => 2 });
 
-    all_perl_files_ok(@directories, { strict => 1 })
+    all_perl_files_ok(@directories, { strict => 1 });
 
 Checks all Perl files (basically C<*.pm> and C<*.pl>) in C<@directories> and sub-directories. If C<@directories> is empty the default is the parent of the current directory.
 
