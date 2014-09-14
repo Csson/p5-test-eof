@@ -41,7 +41,7 @@
             "File::ReadBackwards" : "0",
             "File::Spec" : "0",
             "Test::Builder" : "0",
-            "perl" : "5.010001"
+            "perl" : "v5.12.0"
          }
       },
       "test" : {

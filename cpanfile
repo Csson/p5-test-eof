@@ -1,4 +1,4 @@
-requires 'perl', '5.010001';
+requires 'perl', '5.12.0';
 
 requires 'Cwd';
 requires 'File::Find';
