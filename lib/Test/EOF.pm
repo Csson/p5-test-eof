@@ -178,6 +178,8 @@ __END__
 
 Test::EOF - Check correct end of files in your project.
 
+=for html <p><a style="float: left;" href="https://travis-ci.org/Csson/p5-test-eof"><img src="https://travis-ci.org/Csson/p5-test-eof.svg?branch=master">&nbsp;</a>
+
 =head1 SYNOPSIS
 
   use Test::EOF;

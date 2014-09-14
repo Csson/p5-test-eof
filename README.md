@@ -2,6 +2,10 @@
 
 Test::EOF - Check correct end of files in your project.
 
+<div>
+    <p><a style="float: left;" href="https://travis-ci.org/Csson/p5-test-eof"><img src="https://travis-ci.org/Csson/p5-test-eof.svg?branch=master">&nbsp;</a>
+</div>
+
 # SYNOPSIS
 
     use Test::EOF;
@@ -11,8 +15,6 @@ Test::EOF - Check correct end of files in your project.
     done_testing();
 
 # DESCRIPTION
-
-Deprecated. Renamed [Test::EOF](https://metacpan.org/pod/Test::EOF). This distribution will soon be removed.
 
 This module is used to check the end of files of Perl modules and scripts. It is a way to make sure that files and with (at least) one line break.
 
