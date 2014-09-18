@@ -10,6 +10,7 @@ Revision history for Test-EOF
  [Enhancements]
 
  [Meta]
+ - Fix missing build prereqs.
 
  [New Features]
 
