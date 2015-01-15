@@ -1,19 +1,19 @@
-package Test::EOF;
-
+use 5.10.1;
 use strict;
 use warnings;
 
-use 5.010;
+package Test::EOF;
+
+# VERSION
+# ABSTRACT: Check correct end of files in a project.
 
 use Cwd qw/cwd/;
 use File::Find;
 use File::ReadBackwards;
-use File::Spec;
 use Test::Builder;
 
 my $perlstart = qr/^#!.*perl/;
 my $test = Test::Builder->new;
-my $updir = File::Spec->updir;
 
 sub import {
     my $self = shift;
@@ -26,13 +26,11 @@ sub import {
     $test->plan(@_);
 }
 
-
-
 sub all_perl_files_ok {
     my $options = ref $_[0] eq 'HASH' ? shift : ref $_[-1] eq 'HASH' ? pop : {};
     my @files = _all_perl_files(@_);
 
-    _make_plan();
+    $test->expected_tests;
 
     # no need to check then...
     if(exists $options->{'minimum_newlines'} && $options->{'minimum_newlines'} <= 0) {
@@ -117,7 +115,6 @@ sub _all_perl_files {
     my @perls = grep { _is_perl($_) || _is_perl($_) } @found;
 
     return @perls;
-
 }
 
 sub _is_perl {
@@ -140,7 +137,6 @@ sub _is_perl {
 
     # nope
     return;
-
 }
 
 sub _module_to_path {
@@ -158,27 +154,12 @@ sub _module_to_path {
     return $file;
 }
 
-
-
-
-
-sub _make_plan {
-    unless($test->has_plan) {
-   #     $test->plan('no_plan');
-    }
-    $test->expected_tests;
-}
-
 1;
 __END__
 
+=pod
+
 =encoding utf-8
-
-=head1 NAME
-
-Test::EOF - Check correct end of files in your project.
-
-=for html <p><a style="float: left;" href="https://travis-ci.org/Csson/p5-test-eof"><img src="https://travis-ci.org/Csson/p5-test-eof.svg?branch=master">&nbsp;</a>
 
 =head1 SYNOPSIS
 
@@ -228,15 +209,11 @@ L<Test::EOL> was used as an inspiration.
 
 =head1 SEE ALSO
 
-=over
-
-=item * L<Test::EOL>
-
-=item * L<Test::NoTabs>
-
-=item * L<Test::More>
-
-=back
+=for :list
+* L<Dist::Zilla::Plugin::Test::EOF>
+* L<Test::EOL>
+* L<Test::NoTabs>
+* L<Test::More>
 
 =head1 AUTHOR
 

@@ -1,10 +1,10 @@
 # NAME
 
-Test::EOF - Check correct end of files in your project.
+Test::EOF - Check correct end of files in a project.
 
-<div>
-    <p><a style="float: left;" href="https://travis-ci.org/Csson/p5-test-eof"><img src="https://travis-ci.org/Csson/p5-test-eof.svg?branch=master">&nbsp;</a>
-</div>
+# VERSION
+
+Version 0.0611, released 2015-01-15.
 
 # SYNOPSIS
 
@@ -54,6 +54,7 @@ If `strict` is given a true value, both `minimum_newlines` and `maximum_newlines
 
 # SEE ALSO
 
+- [Dist::Zilla::Plugin::Test::EOF](https://metacpan.org/pod/Dist::Zilla::Plugin::Test::EOF)
 - [Test::EOL](https://metacpan.org/pod/Test::EOL)
 - [Test::NoTabs](https://metacpan.org/pod/Test::NoTabs)
 - [Test::More](https://metacpan.org/pod/Test::More)
@@ -70,3 +71,22 @@ Copyright 2014- Erik Carlsson
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
+
+# SOURCE
+
+[https://github.com/Csson/p5-test-eof](https://github.com/Csson/p5-test-eof)
+
+# HOMEPAGE
+
+[https://metacpan.org/release/Test-EOF](https://metacpan.org/release/Test-EOF)
+
+# AUTHOR
+
+Erik Carlsson <info@code301.com>
+
+# COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2015 by Erik Carlsson <info@code301.com>.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
