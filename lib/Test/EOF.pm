@@ -67,8 +67,8 @@ sub _check_perl_file {
 
     LINE:
     while(my $line = $reader->readline) {
-        ++$linecount if $line =~ m{\n$};
-        next LINE if $line =~ m{^\n$};
+        ++$linecount if $line =~ m{\v$};
+        next LINE if $line =~ m{^\v$};
         last LINE;
     }
 
@@ -173,7 +173,7 @@ __END__
 
 This module is used to check the end of files of Perl modules and scripts. It is a way to make sure that files and with (at least) one line break.
 
-It assumes that only "\n" are used as line breaks. You might want to check if your files contains any faulty line breaks, use L<Test::EOL> for that first.
+It uses C<\v> to look for line breaks. If you want to ensure that only C<\n> are used as line break, use L<Test::EOL> for that first.
 
 There is only one function:
 

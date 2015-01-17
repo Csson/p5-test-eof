@@ -52,7 +52,7 @@
    "provides" : {
       "Test::EOF" : {
          "file" : "lib/Test/EOF.pm",
-         "version" : "0.0611"
+         "version" : "0.0701"
       }
    },
    "release_status" : "stable",
@@ -67,6 +67,6 @@
          "web" : "https://github.com/Csson/p5-test-eof"
       }
    },
-   "version" : "0.0611"
+   "version" : "0.0701"
 }
 

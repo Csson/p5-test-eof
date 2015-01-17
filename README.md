@@ -4,7 +4,7 @@ Test::EOF - Check correct end of files in a project.
 
 # VERSION
 
-Version 0.0611, released 2015-01-15.
+Version 0.0701, released 2015-01-17.
 
 # SYNOPSIS
 
@@ -18,7 +18,7 @@ Version 0.0611, released 2015-01-15.
 
 This module is used to check the end of files of Perl modules and scripts. It is a way to make sure that files and with (at least) one line break.
 
-It assumes that only "\\n" are used as line breaks. You might want to check if your files contains any faulty line breaks, use [Test::EOL](https://metacpan.org/pod/Test::EOL) for that first.
+It uses `\v` to look for line breaks. If you want to ensure that only `\n` are used as line break, use [Test::EOL](https://metacpan.org/pod/Test::EOL) for that first.
 
 There is only one function:
 

@@ -8,12 +8,23 @@ Revision history for Test-EOF
  [Documentation]
 
  [Enhancements]
+ - Use \v instead of \v.
 
  [Meta]
 
  [New Features]
 
  [Revision]
+
+0.0700 2015-01-15T19:32:20Z CET
+ [Documentation]
+ - Minor improvements.
+
+ [Enhancements]
+ - Removed unused prereq.
+
+ [Meta]
+ - Converted to new dzil settings.
 
 0.0610 2014-09-18T21:26:55Z CEST
  [Meta]
