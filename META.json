@@ -4,7 +4,7 @@
       "Erik Carlsson <info@code301.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.029, CPAN::Meta::Converter version 2.143240",
+   "generated_by" : "Dist::Zilla version 5.031, CPAN::Meta::Converter version 2.143240",
    "license" : [
       "perl_5"
    ],
@@ -52,7 +52,7 @@
    "provides" : {
       "Test::EOF" : {
          "file" : "lib/Test/EOF.pm",
-         "version" : "0.0701"
+         "version" : "0.0801"
       }
    },
    "release_status" : "stable",
@@ -67,6 +67,6 @@
          "web" : "https://github.com/Csson/p5-test-eof"
       }
    },
-   "version" : "0.0701"
+   "version" : "0.0801"
 }
 

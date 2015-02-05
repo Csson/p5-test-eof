@@ -8,13 +8,17 @@ Revision history for Test-EOF
  [Documentation]
 
  [Enhancements]
- - Use \v instead of \v.
 
  [Meta]
 
  [New Features]
 
  [Revision]
+ - Trying to make tests succeed on windows.
+
+0.0800 2015-01-17T17:44:42Z CET
+ [Enhancements]
+ - Use \v instead of \n.
 
 0.0700 2015-01-15T19:32:20Z CET
  [Documentation]
