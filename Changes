@@ -14,6 +14,9 @@ Revision history for Test-EOF
  [New Features]
 
  [Revision]
+
+0.0801 2015-02-05T13:22:01Z CET
+ [Revision]
  - Trying to make tests succeed on windows.
 
 0.0800 2015-01-17T17:44:42Z CET
