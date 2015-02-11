@@ -8,6 +8,7 @@ Revision history for Test-EOF
  [Documentation]
 
  [Enhancements]
+ - Let cpan testers on windows test if the test file has at least one empty line (instead of three).
 
  [Meta]
 
