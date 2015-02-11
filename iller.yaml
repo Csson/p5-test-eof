@@ -1,0 +1,25 @@
+---
++doctype: dist
+name: Test-EOF
+
++prereqs:
+  runtime:
+    requires:
+      - perl: 5.010001
+      - Cwd
+      - File::Find
+      - File::ReadBackwards
+      - Test::Builder
+
+  test:
+    requires:
+      - Test::More: 0.96
+
++plugins:
+  - +config: Author::CSSON
+
+---
++doctype: weaver
+
++plugins:
+  - +config: Author::CSSON
