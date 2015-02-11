@@ -4,7 +4,7 @@ Test::EOF - Check correct end of files in a project.
 
 # VERSION
 
-Version 0.0801, released 2015-02-05.
+Version 0.0802, released 2015-02-11.
 
 # SYNOPSIS
 
