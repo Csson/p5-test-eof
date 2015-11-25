@@ -2,9 +2,11 @@
 
 Test::EOF - Check correct end of files in a project.
 
+![Requires Perl 5.10.1](https://img.shields.io/badge/perl-5.10.1-brightgreen.svg) [![Travis status](https://api.travis-ci.org/Csson/p5-test-eof.svg?branch=master)](https://travis-ci.org/Csson/p5-test-eof)
+
 # VERSION
 
-Version 0.0802, released 2015-02-11.
+Version 0.0803, released 2015-11-25.
 
 # SYNOPSIS
 
@@ -86,7 +88,7 @@ Erik Carlsson <info@code301.com>
 
 # COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2015 by Erik Carlsson <info@code301.com>.
+This software is copyright (c) 2015 by Erik Carlsson.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

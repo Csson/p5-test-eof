@@ -8,13 +8,23 @@ Revision history for Test-EOF
  [Documentation]
 
  [Enhancements]
- - Let cpan testers on windows test if the test file has at least one empty line (instead of three).
 
  [Meta]
+ - Regenerated dist.ini, weaver.ini from iller.yaml/Dist::Iller.
 
  [New Features]
 
+ [Requirements]
+ - Test::POD is now a develop requirement, rather than a (missing) build requirement (MANWAR++).
+
  [Revision]
+
+ [Testing]
+
+0.0802 2015-02-11T12:42:46Z CET
+ [Enhancements]
+ - Let cpan testers on windows test if the test file has at least one empty
+   line (instead of three).
 
 0.0801 2015-02-05T13:22:01Z CET
  [Revision]

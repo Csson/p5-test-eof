@@ -1,8 +1,10 @@
 ---
-+doctype: dist
-name: Test-EOF
+doctype: dist
 
-+prereqs:
+header:
+  name: Test-EOF
+
+prereqs:
   runtime:
     requires:
       - perl: 5.010001
@@ -11,15 +13,13 @@ name: Test-EOF
       - File::ReadBackwards
       - Test::Builder
 
-  test:
-    requires:
-      - Test::More: 0.96
-
-+plugins:
+plugins:
   - +config: Author::CSSON
 
 ---
-+doctype: weaver
+doctype: weaver
 
-+plugins:
+plugins:
   - +config: Author::CSSON
+
+  - +remove_plugin: Splint

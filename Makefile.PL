@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-
+use 5.010001;
 
 use ExtUtils::MakeMaker;
 
@@ -14,8 +14,14 @@ my %WriteMakefileArgs = (
   },
   "DISTNAME" => "Test-EOF",
   "LICENSE" => "perl",
+  "MIN_PERL_VERSION" => "5.010001",
   "NAME" => "Test::EOF",
-  "PREREQ_PM" => {},
+  "PREREQ_PM" => {
+    "Cwd" => 0,
+    "File::Find" => 0,
+    "File::ReadBackwards" => 0,
+    "Test::Builder" => 0
+  },
   "TEST_REQUIRES" => {
     "ExtUtils::MakeMaker" => 0,
     "File::Spec" => 0,
@@ -29,8 +35,12 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
+  "Cwd" => 0,
   "ExtUtils::MakeMaker" => 0,
+  "File::Find" => 0,
+  "File::ReadBackwards" => 0,
   "File::Spec" => 0,
+  "Test::Builder" => 0,
   "Test::More" => "0.96"
 );
 
