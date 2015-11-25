@@ -6,6 +6,7 @@ Revision history for Test-EOF
  [Bug Fixes]
 
  [Documentation]
+ - Removed duplicated POD sections.
 
  [Enhancements]
 

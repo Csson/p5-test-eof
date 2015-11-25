@@ -2,7 +2,7 @@
 
 Test::EOF - Check correct end of files in a project.
 
-![Requires Perl 5.10.1](https://img.shields.io/badge/perl-5.10.1-brightgreen.svg) [![Travis status](https://api.travis-ci.org/Csson/p5-test-eof.svg?branch=master)](https://travis-ci.org/Csson/p5-test-eof)
+![Requires Perl 5.10.1+](https://img.shields.io/badge/perl-5.10.1+-brightgreen.svg) [![Travis status](https://api.travis-ci.org/Csson/p5-test-eof.svg?branch=master)](https://travis-ci.org/Csson/p5-test-eof)
 
 # VERSION
 
@@ -60,19 +60,6 @@ If `strict` is given a true value, both `minimum_newlines` and `maximum_newlines
 - [Test::EOL](https://metacpan.org/pod/Test::EOL)
 - [Test::NoTabs](https://metacpan.org/pod/Test::NoTabs)
 - [Test::More](https://metacpan.org/pod/Test::More)
-
-# AUTHOR
-
-Erik Carlsson <info@code301.com>
-
-# COPYRIGHT
-
-Copyright 2014- Erik Carlsson
-
-# LICENSE
-
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
 
 # SOURCE
 
