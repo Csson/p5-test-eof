@@ -9,7 +9,8 @@ Revision history for Test-EOF
 
  [Enhancements]
 
- [Meta]
+ [Other Changes]
+ - Can't test on Travis with less than Perl 5.14.
  - Regenerated dist.ini, weaver.ini from iller.yaml/Dist::Iller.
 
  [New Features]
