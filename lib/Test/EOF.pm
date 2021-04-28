@@ -4,8 +4,9 @@ use warnings;
 
 package Test::EOF;
 
-# VERSION
+our $VERSION = '0.0804';
 # ABSTRACT: Check correct end of files in a project.
+# AUTHORITY
 
 use Cwd qw/cwd/;
 use File::Find;
