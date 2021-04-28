@@ -4,7 +4,7 @@ use warnings;
 
 package Test::EOF;
 
-our $VERSION = '0.0804';
+our $VERSION = '0.0805';
 # ABSTRACT: Check correct end of files in a project.
 # AUTHORITY
 
