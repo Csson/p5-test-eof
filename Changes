@@ -6,22 +6,32 @@ Revision history for Test-EOF
  [Bug Fixes]
 
  [Documentation]
- - Removed duplicated POD sections.
 
  [Enhancements]
+
+ [New Features]
+
+ [Other Changes]
+ - Remove .travis.yml
+ - Add github actions
+ - Rebuilt with current tooling
+ - No functional changes
+
+ [Requirements]
+
+ [Testing]
+
+0.0803 2015-11-25T21:52:37Z UTC
+ [Documentation]
+ - Removed duplicated POD sections.
 
  [Other Changes]
  - Can't test on Travis with less than Perl 5.14.
  - Regenerated dist.ini, weaver.ini from iller.yaml/Dist::Iller.
 
- [New Features]
-
  [Requirements]
- - Test::POD is now a develop requirement, rather than a (missing) build requirement (MANWAR++).
-
- [Revision]
-
- [Testing]
+ - Test::POD is now a develop requirement, rather than a (missing) build
+   requirement (MANWAR++).
 
 0.0802 2015-02-11T12:42:46Z CET
  [Enhancements]
