@@ -24,7 +24,7 @@ Version 0.0804, released 2021-04-28.
 
 # DESCRIPTION
 
-This module is used to check the end of files of Perl modules and scripts. It is a way to make sure that files and with (at least) one line break.
+This module is used to check the end of files of Perl modules and scripts. It is a way to make sure that files end with (at least) one line break.
 
 It uses `\v` to look for line breaks. If you want to ensure that only `\n` are used as line break, use [Test::EOL](https://metacpan.org/pod/Test::EOL) for that first.
 
